@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_bar_layout">
+        </include>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/main_page_toolbar"
+            android:id="@+id/all_users_post_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/add_new_post_button"
+            android:focusableInTouchMode="false"
+            android:baselineAlignBottom="false"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_post_high"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/all_users_post_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:itemIconTint="@android:color/holo_red_light"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

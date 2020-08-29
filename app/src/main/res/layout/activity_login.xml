@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:drawableLeft="@drawable/email"
+        android:padding="5dp"
+        android:background="@drawable/inputs"
+        android:hint="Email..."
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/login_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:drawableLeft="@drawable/password"
+        android:padding="5dp"
+        android:background="@drawable/inputs"
+        android:layout_marginTop="15dp"
+        android:id="@+id/login_Password"
+        android:hint="Password..."
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_Email"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_account"
+        android:padding="18sp"
+        android:background="@drawable/inputs"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Login"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/login_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/register_account_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_account"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Can't have Account, need new account?"
+        android:textColor="#886737"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewLoginWith"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="497dp"
+        android:gravity="center"
+        android:text="or Login with" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_below="@id/textviewLoginWith"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/facebook_sigin_button"
+            android:layout_margin="5dp"
+            android:src="@drawable/facebook"
+            android:layout_width="60dp"
+            android:layout_height="65dp"/>
+        <ImageView
+            android:id="@+id/twitter_sigin_button"
+            android:layout_margin="5dp"
+            android:src="@drawable/twitter"
+            android:layout_width="85dp"
+            android:layout_height="80dp"/>
+        <ImageView
+            android:id="@+id/google_sigin_button"
+            android:layout_margin="5dp"
+            android:src="@drawable/google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/forgot_password_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:text="Forgot password?"/>
+</RelativeLayout>

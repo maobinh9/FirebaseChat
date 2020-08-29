@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="@color/colorProfile"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/all_users_profile_image"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/profile"
+        android:layout_width="85dp"
+        android:layout_height="85dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_toEndOf="@id/all_users_profile_image"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/all_users_profile_fullname"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/background_light"
+                android:text="User full name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/all_user_online_icon"
+                android:src="@drawable/ic_online"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/all_users_status"
+            android:textSize="15dp"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:text="Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

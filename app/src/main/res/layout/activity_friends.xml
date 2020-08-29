@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android222"
+    tools:context=".FriendsActivity">
+
+    <TextView
+        android:id="@+id/simpleText_friend"
+        android:textColor="@color/cardview_light_background"
+        android:text="Friends"
+        android:textSize="28dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friend_list"
+        android:layout_margin="10dp"
+        android:layout_below="@id/simpleText_friend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

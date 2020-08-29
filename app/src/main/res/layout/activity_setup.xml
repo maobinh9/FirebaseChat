@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".SetupActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="200dp"
+        android:id="@+id/setup_profile_image"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/setup_username"
+        android:drawableLeft="@drawable/username"
+        android:hint="UserName..."
+        android:padding="14dp"
+        android:background="@drawable/inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="307dp" />
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/setup_fullname"
+        android:drawableLeft="@drawable/name"
+        android:hint="FullName..."
+        android:padding="14dp"
+        android:background="@drawable/inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="375dp" />
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/setup_country_name"
+        android:drawableLeft="@drawable/country"
+        android:hint="Country"
+        android:padding="14dp"
+        android:background="@drawable/inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="440dp" />
+
+    <Button
+        android:id="@+id/setup_infomation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button"
+        android:text="Save" />
+</RelativeLayout>
